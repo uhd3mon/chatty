@@ -71,23 +71,19 @@ location. Chatty will offer to update itself from here when a new version lands.
 
 ### Linux
 
-Download **`Chatty-2.0.0-linux-x64.zip`**, unzip it anywhere, and run the
-`chatty` binary inside:
+Download **`Chatty.AppImage`**, make it executable, and run it:
 
 ```bash
-unzip Chatty-2.0.0-linux-x64.zip
-./linux-unpacked/chatty
+chmod +x Chatty.AppImage
+./Chatty.AppImage
 ```
 
-Extract with `unzip` rather than a graphical archive tool — some of those drop
-the executable bit and the app then will not start. If that happens:
+No installation, no package manager, no dependencies to chase — an AppImage is
+a single self-contained file that runs on any modern distribution.
 
-```bash
-chmod +x linux-unpacked/chatty
-```
-
-Chatty checks this page for new versions and will tell you when one is out. On
-Linux, unzip the new build over your existing folder.
+Chatty updates itself from this page: when a new version is out it downloads
+the new AppImage and replaces itself in place. Keep it somewhere you can write
+to (your home folder is ideal) so it can do that.
 
 ---
 
