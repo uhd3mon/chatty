@@ -1,0 +1,11 @@
+# This repository carries a README and release artifacts only.
+# Source code and builds do not belong here.
+src/
+client/
+node_modules/
+*.exe
+*.zip
+*.AppImage
+*.deb
+*.rpm
+*.asar
