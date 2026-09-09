@@ -15,6 +15,8 @@ that your viewers see in Discord.
 
 [**Download the latest release →**](../../releases/latest)
 
+*Windows 11 users: Chatty is unsigned, so Smart App Control blocks the installer. [How to turn it off](#windows) — it takes about thirty seconds.*
+
 ---
 
 ## What it does
@@ -114,6 +116,36 @@ into it; the bot reads it from an environment variable instead.
 Download **`Chatty-Setup.exe`** from the
 [latest release](../../releases/latest) and run it. You can choose the install
 location. Chatty will offer to update itself from here when a new version lands.
+
+> **Windows 11 will block the installer.** Chatty is not code-signed, and
+> Windows 11's **Smart App Control** refuses to run unsigned programs. It is a
+> block, not a warning you can dismiss — so you have to turn it off before
+> installing.
+
+**Turning Smart App Control off**
+
+1. Press **Start**, type **Windows Security**, and open it.
+2. Go to **App & browser control**.
+3. Under **Smart App Control**, click **Smart App Control settings**.
+4. Select **Off** and confirm.
+5. Run `Chatty-Setup.exe`.
+
+If Smart App Control is not on that screen, your PC does not have it enabled and
+there is nothing to change — it only switches itself on for some installations
+of Windows 11.
+
+**You can turn it back on afterwards** on Windows 11 build 26100.8116,
+26200.8116, 2800.1896 or newer — return to the same screen and pick **On**.
+Press <kbd>Win</kbd>+<kbd>R</kbd> and run `winver` to check your build. On older
+builds the switch is one-way until Windows is reset, so update first if you want
+to keep the option.
+
+Smart App Control applies to everything on the PC, not just Chatty, so turning
+it off removes that check for other programs too.
+
+Even with it off, Windows SmartScreen may still show *"Windows protected your
+PC"* the first time you run the installer. Click **More info → Run anyway**.
+That prompt fades as more people install each release.
 
 ### Linux
 
